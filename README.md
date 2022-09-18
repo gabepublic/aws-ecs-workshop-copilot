@@ -16,6 +16,12 @@ arrows moving between the two subnets only.
 
 ## Prerequisite
 
+- Setup Docker Engine - see Install Docker Engine on Ubuntu
+  NOTE: the post installation to add the user to the docker group is necessary,
+  to avoid the need for `sudo` in running any docker commands. However, more
+  importantly, copilot will use the local docker to build the docker images,
+  and it will fail without the post installation step.
+
 - Setup AWS CLI v2; follow the instructions:
   https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 
